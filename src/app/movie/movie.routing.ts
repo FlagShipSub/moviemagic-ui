@@ -3,8 +3,9 @@ import { MovieComponent } from './movie.component';
 
 const routes: Routes = [
   {
-    path :'', component : MovieComponent
-    },
+    path: '',
+    component: MovieComponent,
+  }
 ];
 
 export const MovieRoutes = RouterModule.forChild(routes);

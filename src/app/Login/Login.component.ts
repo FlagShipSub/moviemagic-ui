@@ -8,11 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class LoginComponent implements OnInit {
 
   constructor() { }
-  list  = [1,2,3,4];
-  x = 0;
   ngOnInit() {
   }
   submit() {
-    this.x = this.x+1;
   }
 }
