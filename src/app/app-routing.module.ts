@@ -1,18 +1,18 @@
-import { NgModule, Component } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { Error404Component } from './Error404/Error404.component';
+import { Error404Component } from './error404/error404.component';
 
 const routes: Routes = [
   {
     path: '',
     loadChildren: () =>
-      import('./MainModule/MainModule.module').then((m) => m.MainModuleModule),
+      import('./movie/movie.module').then((m) => m.MovieModule),
     canActivate: [],
   },
   {
     path: 'login',
     loadChildren: () =>
-      import('./Login/Login.module').then((m) => m.LoginModule),
+      import('./login/login.module').then((m) => m.LoginModule),
   },
   {
     path: 'sign-up',

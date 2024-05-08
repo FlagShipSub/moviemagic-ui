@@ -4,7 +4,7 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
-import { Error404Component } from './Error404/Error404.component';
+import { Error404Component } from './error404/error404.component';
 
 @NgModule({
   declarations: [

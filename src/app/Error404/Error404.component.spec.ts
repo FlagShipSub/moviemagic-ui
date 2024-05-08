@@ -3,7 +3,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
-import { Error404Component } from './Error404.component';
+import { Error404Component } from './error404.component';
 
 describe('Error404Component', () => {
   let component: Error404Component;
