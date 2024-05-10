@@ -1,5 +1,5 @@
 import { Routes, RouterModule } from '@angular/router';
-import { LoginComponent } from './login.component';
+import { LoginComponent } from './Login.component';
 import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
 const routes: Routes = [
   {  path: "", component: LoginComponent  ,
