@@ -8,10 +8,12 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { LoginModule } from './login/Login.module';
 import { AuthInterceptor } from './interceptors/auth.interceptor';
+import { ButtonModule } from 'primeng/button';
 
 @NgModule({
   declarations: [AppComponent, PageNotFoundComponent],
-  imports: [BrowserModule, AppRoutingModule, LoginModule, MatSlideToggleModule],
+  imports: [BrowserModule, AppRoutingModule, LoginModule, MatSlideToggleModule
+  ],
   providers: [
     provideAnimationsAsync(),
     { provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true },
