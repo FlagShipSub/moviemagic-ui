@@ -4,21 +4,13 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
-import { Error404Component } from './error404/error404.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { LoginModule } from './login/login.module';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    Error404Component
-   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    MatSlideToggleModule
-  ],
-  providers: [
-    provideAnimationsAsync()
-  ],
-  bootstrap: [AppComponent]
+  declarations: [AppComponent, PageNotFoundComponent],
+  imports: [BrowserModule, AppRoutingModule, LoginModule, MatSlideToggleModule],
+  providers: [provideAnimationsAsync()],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
