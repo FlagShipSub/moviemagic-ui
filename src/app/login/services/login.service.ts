@@ -7,4 +7,7 @@ export class LoginService {
 
 constructor() { }
 
+getJwtToken() {
+  return localStorage.getItem('token');
+}
 }

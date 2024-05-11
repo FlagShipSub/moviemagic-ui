@@ -1,0 +1,6 @@
+{
+    "$schema": "./node_modules/ng-openapi-gen/ng-openapi-gen-schema.json",
+    "input": "Your Swagger json",
+    "output": "src/app/api/user-service",
+    "ignoreUnusedModels": false
+}
