@@ -1,7 +1,28 @@
-<div class="main-container">
-  <div class="content">
-      <h1 style="font-weight: bold;">Movie Booking System</h1>
-      <!-- <input type="text" placeholder="userName" class="input-box"> -->
-  </div>
+<div class="loginComponent flex justify-content-center">
+  <p-dialog header="Header" [(visible)]="visible" [modal]="true" [style]="{ width: '40rem' ,height:'25rem'}">
+    <ng-template pTemplate="header">
+      <div class="flex align-items-center  gap-2">
+        <p-avatar [style]="{'width':'60px','height':'60px'}"
+          image="https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png" shape="circle" />
+        <h1 style="font-weight: bold ;  " class="text-black-alpha-90 ml-5 text-5xl">User Login</h1>
+      </div>
+    </ng-template>
+    <div class="flex align-items-center gap-3 mb-5">
+      <label for="username" class="font-bold text-lg text-black-alpha-90 w-6rem">
+        Username
+      </label>
+      <input pInputText id="username" class="flex-auto" autocomplete="off" />
+    </div>
+    <div class="flex align-items-center gap-3 mb-3">
+      <label for="email" class="font-bold text-black-alpha-90 text-lg w-6rem">Password</label>
+      <input pInputText id="email" class="flex-auto" autocomplete="off" />
+    </div>
+
+    <ng-template pTemplate="footer">
+      <p-button label="Cancel" [text]="true" [style]="{'color':'black'}" severity="secondary"
+        (click)="visible = false" />
+      <p-button label="Login" [outlined]="true" [style]="{'color':'black'}" severity="secondary"
+        (click)="visible = false" />
+    </ng-template>
+  </p-dialog>
 </div>
-<!-- <router-outlet></router-outlet> -->
