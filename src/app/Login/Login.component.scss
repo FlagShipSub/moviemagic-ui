@@ -1,39 +1,12 @@
-:host {
-  display: block;
-  width: 100%;
-  height: 100%;
+::ng-deep {
+  .loginComponent {
+    .p-icon-wrapper {
+      color: black !important;
+    }
+    .p-dialog-header {
+      align-items: start;
+    }
+  }
+
 }
-.main-container {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  background-color: aquamarine;
-}
-.content {
-  width: 500px;
-  height: 500px;
-  display: block;
-  background-color: purple;
-  border-radius: 10px ;
-}
-.content h1{
-  padding-top: 20px;
-  color: white;
-  text-align: center;
-}
-.input-box {
-  width: 100%;
-  height:50px ;
-  background-color: transparent;
-  margin: 30px 0;
-  border: none;
-  outline: none ;
-  border: 2px solid rgb(255,255,255,.2);
-  border-radius: 40px;
-}
-.input-box::placeholder {
-color: white;
-padding: 10px;
-}
+

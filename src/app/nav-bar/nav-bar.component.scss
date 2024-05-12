@@ -1,0 +1,41 @@
+.card {
+  background: #222831;
+  padding: 2rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  text-decoration-line: none;
+  position: fixed;
+  width: 100%;
+}
+
+.nav-bar {
+  .p-menuitem-link {
+    color: white;
+  }
+
+  .p-menuitem-link:hover {
+    color: black;
+  }
+
+  .p-submenu-list {
+    color: black;
+    background-color: black;
+  }
+
+  .loginButton {
+    color: white;
+    border-radius: 10px;
+    padding: 0 10px;
+    border-color: white;
+  }
+
+  .loginButton:hover {
+    transform: scale(1.1)
+  }
+
+  .p-button-label {
+    color: white;
+  }
+
+
+}

@@ -1,3 +1,84 @@
-<div class="card flex justify-content-center">
-  <p-button label="Check" icon="pi pi-check">SignUp Module</p-button>
+<div *ngIf="isVisible" class="signUp">
+  <p-splitter [panelSizes]="[35, 65]" [style]="{ height: '680px', position:'relative', top:'120px'  }"
+    styleClass="mb-5">
+    <ng-template pTemplate>
+      <div class="col flex align-items-center justify-content-center">
+        <img src="../../assets/images/movie.png" width="100%" height="100%" alt="">
+      </div>
+    </ng-template>
+    <ng-template pTemplate>
+      <div style="background-color: black;" class="col gap-2 flex align-items-center justify-content-center">
+
+        <div class="gap-2">
+          <h1 style="font-size: 30px; color: white;">SignUp Form</h1>
+          <p-card [style]="">
+            <div class="mb-4">
+              <p-floatLabel class="mb-5">
+                <input pInputText id="username" [(ngModel)]="value" />
+                <label for="username">Username</label>
+              </p-floatLabel>
+            </div>
+
+            <div class="mb-4">
+              <p-floatLabel>
+                <input pInputText id="email" [(ngModel)]="value" />
+                <label for="email">Email</label>
+              </p-floatLabel>
+
+            </div>
+            <div class="mb-4">
+              <p-floatLabel>
+                <input pInputText id="Password" [(ngModel)]="value" />
+                <label for="Password">Password</label>
+              </p-floatLabel>
+            </div>
+            <div class="mb-4">
+              <p-floatLabel>
+                <input pInputText id="ConfirmPassword" [(ngModel)]="value" />
+                <label for="ConfirmPassword">ConfirmPassword</label>
+              </p-floatLabel>
+            </div>
+            <div class="mb-4">
+              <p-floatLabel class="mb-5">
+                <input pInputText id="phoneNumber" [(ngModel)]="value" />
+                <label for="phoneNumber">PhoneNumber</label>
+              </p-floatLabel>
+            </div>
+            <div class="flex mb-4 flex-wrap gap-3">
+              <div class="flex align-items-center">
+                <p-radioButton name="male" value="male" [(ngModel)]="singUpOptions.radio" inputId="male" />
+                <label style="color: black;" for="male" class="ml-2">
+                  Male
+                </label>
+              </div>
+
+              <div class="flex align-items-center">
+                <p-radioButton name="female" value="female" [(ngModel)]="singUpOptions.radio" inputId="female" />
+                <label style="color: black;" for="female" class="ml-2">
+                  Female
+                </label>
+              </div>
+              <p-dropdown [options]="cities" [(ngModel)]="selectedCity" [checkmark]="true" optionLabel="name"
+                [showClear]="true" placeholder="Select a City" />
+            </div>
+            <div class=" flex gap-3 mb-4">
+              <p-dropdown [options]="states" [(ngModel)]="selectedState" [checkmark]="true" optionLabel="name"
+                [showClear]="true" placeholder="Select a State" />
+              <p-dropdown [options]="countries" [(ngModel)]="selectedCountry" [checkmark]="true" optionLabel="name"
+                [showClear]="true" placeholder="Select a Country" />
+            </div>
+
+
+            <div style="margin-bottom: 40px;" class="flex align-items-center   justify-content-end gap-3">
+              <p-button label="Cancel" [text]="true" (click)="cancel()" [raised]="true"
+                [style]="{'color':'black', 'border-color':'black'}" class="loginButton" severity="info" />
+              <p-button label="Create Account" [text]="true" (click)="false" [raised]="true"
+                [style]="{'color':'black', 'border-color':'black'}" class="loginButton" severity="info" />
+            </div>
+
+          </p-card>
+        </div>
+      </div>
+    </ng-template>
+  </p-splitter>
 </div>

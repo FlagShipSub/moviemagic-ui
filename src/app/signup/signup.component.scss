@@ -1,0 +1,28 @@
+::ng-deep {
+  .signUp {
+    padding: 2rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    text-decoration-line: none;
+    width: 100%;
+    height: 400px;
+
+    .p-card.p-component {
+      width: 500px;
+      height: 600px;
+    }
+
+    .p-float-label label {
+      color: black;
+    }
+
+    .p-inputtext.p-component.p-element {
+      width: 100%;
+    }
+
+    .loginButton:hover {
+      transform: scale(1.1)
+    }
+  }
+
+}
